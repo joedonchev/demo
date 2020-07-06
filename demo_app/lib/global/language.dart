@@ -41,7 +41,7 @@ class Language {
 class LanguageLocalizationsDelegate extends LocalizationsDelegate<Language> {
   const LanguageLocalizationsDelegate();
   @override
-  bool isSupported(Locale locale) => ['en', 'da'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => ['en', 'bg'].contains(locale.languageCode);
   @override
   Future<Language> load(Locale locale) {
     return SynchronousFuture<Language>(Language(locale));
